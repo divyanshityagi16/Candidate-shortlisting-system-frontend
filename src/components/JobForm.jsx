@@ -26,7 +26,7 @@ function JobForm({ setShortlisted, setAiText }) {
       minExperience: Number(job.minExperience),
     };
 
-    const res = await axios.post("http://localhost:5000/api/match", jobData);
+    const res = await axios.post("https://candidate-shortlisting-system-5xr6.onrender.com/api/match", jobData);
 
     setShortlisted(res.data);
   };
@@ -41,7 +41,7 @@ function JobForm({ setShortlisted, setAiText }) {
     };
 
     const res = await axios.post(
-      "http://localhost:5000/api/ai/shortlist",
+      "https://candidate-shortlisting-system-5xr6.onrender.com/api/ai/shortlist",
       jobData
     );
 

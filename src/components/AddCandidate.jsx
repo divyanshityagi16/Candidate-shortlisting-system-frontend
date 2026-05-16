@@ -28,7 +28,7 @@ function AddCandidate({ setRefresh }) {
       bio: form.bio,
     };
 
-    await axios.post("http://localhost:5000/api/candidates", candidateData);
+    await axios.post("https://candidate-shortlisting-system-5xr6.onrender.com/api/candidates", candidateData);
 
     alert("Candidate added successfully");
 
